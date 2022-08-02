@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace DesafioPOO.Entidades
 {
-    internal class CartaoDeDebito
+    public class CartaoDeDebito : Cartao
     {
+        public CartaoDeDebito(string numeroDoCartao, string cpf, int cvv, DateTime validade) : base(numeroDoCartao, cpf, cvv, validade)
+        {
+        }
+
+        public string Pagar()
+        {
+            return "Pagamento com cartão de débito efetuado com sucesso";
+        }
     }
 }
