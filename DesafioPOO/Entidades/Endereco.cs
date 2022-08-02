@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace DesafioPOO.Entidades
 {
-    internal class Endereco
+    public class Endereco
     {
+        public Endereco(string logradouro, string bairro, int numero, string cidade, string uf, string cep)
+        {
+            Logradouro = logradouro;
+            Bairro = bairro;
+            Numero = numero;
+            Cidade = cidade;
+            Uf = uf;
+            Cep = cep;
+        }
+
+        private string Logradouro { get; set; }
+        private string Bairro { get; set; }
+        private int Numero { get; set; }
+        private string Cidade { get; set; }
+        private string Uf { get; set; }
+        private string Cep { get; set; }
+
     }
 }
