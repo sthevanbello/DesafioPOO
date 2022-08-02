@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace DesafioPOO.Enums
 {
-    internal class EStatusCorrida
+    public enum EStatusCorrida
     {
+        Aguardando,
+        Iniciada,
+        Finalizada
     }
 }
