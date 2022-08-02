@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesafioPOO.Views;
+using System;
 
 namespace DesafioPOO
 {
@@ -6,7 +7,7 @@ namespace DesafioPOO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Inicial inicial = new Inicial();
         }
     }
 }

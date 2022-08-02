@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesafioPOO.Entidades
 {
-    internal class Veiculo
+    public class Veiculo
     {
     }
 }

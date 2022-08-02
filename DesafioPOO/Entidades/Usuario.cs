@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesafioPOO.Entidades
 {
-    public class Usuario
+    public abstract class Usuario
     {
         public Usuario(string login, string nome, string email, string telefone, string cpf)
         {
