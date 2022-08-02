@@ -13,7 +13,7 @@ namespace DesafioPOO.Interfaces
         Veiculo ObterDadosDoVeiculo();
         string ReceberPagamento(decimal valor);
         string AceitarCorrida();
-        string IniciarCorrida();
+        string IniciarCorrida(Endereco origem, Endereco destino);
         string PararCorrida();
     }
 }
