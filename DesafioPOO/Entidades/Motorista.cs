@@ -9,41 +9,60 @@ namespace DesafioPOO.Entidades
 {
     public class Motorista : Usuario, IMotorista
     {
-        public Motorista(string login, string nome, string email, string telefone, string cpf) : base(login, nome, email, telefone, cpf)
+        public Motorista(string login, string nome, string email, string telefone, string cpf, string senha) : base(login, nome, email, telefone, cpf, senha)
         {
         }
 
         public ContaBancaria Conta { get; set; }
         public Veiculo TipoDeVeiculo { get; set; }
+        public Corrida _corrida { get; set; }
 
-        public string AceitarCorrida()
+        public bool AceitarCorrida(decimal valor)
         {
-            throw new NotImplementedException();
+            if (valor < 10m)
+            {
+                Console.WriteLine("A corrida não foi aceita pelo motorista");
+                return false;
+            }
+            Console.WriteLine("A corrida foi aceita pelo motorista");
+            return true;
         }
 
-        public string IniciarCorrida()
+        public string IniciarCorrida(Endereco origem, Endereco destino)
         {
-            throw new NotImplementedException();
+            return _corrida.Iniciar(origem, destino);
+            
         }
 
         public Veiculo ObterDadosDoVeiculo()
         {
-            throw new NotImplementedException();
+            return TipoDeVeiculo;
         }
 
         public string ObterNomeDoMotorista()
         {
-            throw new NotImplementedException();
+            return Nome;
         }
 
         public string PararCorrida()
         {
-            throw new NotImplementedException();
+            return _corrida.Parar();
         }
 
         public string ReceberPagamento(decimal valor)
         {
-            throw new NotImplementedException();
+            return Conta.ReceberPagamento(valor);
+        }
+
+        public override bool EfetuarLogin(string login, string senha)
+        {
+            if (Login == login && Senha == senha)
+            {
+                Console.WriteLine("Motorista efetuou o login com sucesso");
+                return true;
+            }
+            Console.WriteLine("Motorista com acesso negado");
+            return false;
         }
     }
 }
