@@ -143,6 +143,7 @@ namespace DesafioPOO.Entidades
         /// </summary>
         public void ObterPagamentosCadastrados()
         {
+            Console.Clear();
             Console.WriteLine("\n--- Pagamentos cadastrados ---\n");
             for (int i = 0; i < Cartoes.Count; i++)
             {
