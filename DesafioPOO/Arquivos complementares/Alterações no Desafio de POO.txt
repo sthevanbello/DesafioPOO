@@ -1,0 +1,47 @@
+Passageiro - 
+Antigo
++ PedirCorrida(Endereco origem, destino): string
++ AlterarTipoDePagamento(enum): string
++ PagarCorrida(enum, decimal): string
++ AlterarEnderecoOrigem(): string
++ AlterarEnderecoOrigem(): string
+
+Novo
++ PedirCorrida(Passageiro, Corrida): Corrida
++ SelecionarTipoPagamento(): string
++ PagarCorrida(decimal, Corrida): string
++ AdicionarEnderecoDeOrigem(Endereco origem): string
++ AdicionarEnderecoDeOrigem(Endereco origem): string
++ ObterEnderecoOrigem(): Endereco
++ ObterEnderecoDestino(): Endereco
++ ObterTipoPagamentoSelecionado(): ETipoPagamento
++ AdicionarCartao(dados, tipoPagamento): void
++ ObterPagamentosCadastrados(): void
++ EfetuarLogin(): bool
++ SelecionarOpcoesDePagamentos(): EtipoPagamento
+
+Motorista
+
+Antigo
++ AceitarCorrida(Endereco): bool
++ IniciarCorrida(Endereco): string
+
+Novo
++  _corrida: Corrida
+
++ AceitarCorrida(valor): bool
++ IniciarCorrida(Endereco, valor): Corrida
++ CriarConta(): void
++ EfetuarLogin(): bool
+
+Cartão
++ NomeDoCartao: string
++ Tipo: Etipopagamento
+
+Corrida
+Antigo
+- SelecionarMotorista(): string
+
+Novo
++ SelecionarMotorista(valor): string
++ ObterMotorista(): string
