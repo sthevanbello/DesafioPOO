@@ -44,7 +44,7 @@ namespace DesafioPOO.Auxiliares
             }
             for (var i = 0; i <= 100; ++i)
             {
-                ConsoleUtility.WriteProgressBar(i, true);
+                Auxiliar.WriteProgressBar(i, true);
                 Thread.Sleep(50);
             }
             Console.WriteLine("");
