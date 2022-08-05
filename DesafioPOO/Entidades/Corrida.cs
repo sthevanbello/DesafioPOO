@@ -77,7 +77,7 @@ namespace DesafioPOO.Entidades
             Random random = new Random();
             int selecionado = random.Next(0, motoristas.Count); // Gera um número aleatório para poder selecionar o motorista na lista
 
-            ConsoleUtility.WriteProgress("motorista", true); // Gera uma barra de progresso com porcentagem
+            Auxiliar.WriteProgress("motorista", true); // Gera uma barra de progresso com porcentagem
             
             Console.WriteLine(motoristas[selecionado]);
 

@@ -84,14 +84,14 @@ namespace DesafioPOO.Views
                 Console.WriteLine("Aperte qualquer tecla para iniciar a corrida");
                 Console.ReadKey();
                 // Colocar uma validação se aceita mesmo a corrida 
-                ConsoleUtility.WriteProgress("corrida", true);
+                Auxiliar.WriteProgress("corrida", true);
                 Thread.Sleep(1000);
                 Console.WriteLine("\n--- Corrida finalizada! ---\n");
                 Thread.Sleep(1000);
                 Console.WriteLine("\nPassageiro chegou ao seu destino\n");
                 Console.WriteLine("Aperte qualquer tecla para iniciar o pagamento");
                 Console.ReadKey();
-                ConsoleUtility.WriteProgress("pagamento", true);
+                Auxiliar.WriteProgress("pagamento", true);
                 Thread.Sleep(1000);
                 Console.WriteLine(passageiroNovo.PagarCorrida(70, corrida));
                 Thread.Sleep(2000);
@@ -100,7 +100,6 @@ namespace DesafioPOO.Views
                 Console.WriteLine("--- Obrigado pela preferência --- =)\n");
                 Console.ResetColor();
                 Thread.Sleep(2000);
-                // falta organizar as telas e deixar melhor apresentável
             }
             else
             {
