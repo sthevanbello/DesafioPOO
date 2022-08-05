@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace DesafioPOO.Enums
 {
+    /// <summary>
+    /// Enumerador para modificar o status da corrida
+    /// </summary>
     public enum EStatusCorrida
     {
         Aguardando,
