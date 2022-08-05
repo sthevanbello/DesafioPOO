@@ -10,10 +10,10 @@ namespace DesafioPOO.Interfaces
 {
     public interface IPassageiro
     {
-        string PedirCorrida(Endereco origem, Endereco destino);
-        string AlterarTipoDePagamento(ETipoPagamento tipoPagamento);
-        string PagarCorrida(ETipoPagamento tipoPagamento, decimal valor);
-        string InformarEnderecoDeOrigem(Endereco origem);
-        string InformarEnderecoDeDestino(Endereco destino);
+        Corrida PedirCorrida(Passageiro passageiro, Corrida corrida);
+        string SelecionarTipoPagamento();
+        string PagarCorrida(decimal valor, Corrida corrida);
+        string AdicionarEnderecoDeOrigem(Endereco origem);
+        string AdicionarEnderecoDeDestino(Endereco destino);
     }
 }
