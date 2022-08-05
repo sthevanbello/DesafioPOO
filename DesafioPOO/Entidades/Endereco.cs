@@ -25,5 +25,11 @@ namespace DesafioPOO.Entidades
         private string Uf { get; set; }
         private string Cep { get; set; }
 
+        public override string ToString()
+        {
+            return $"\nLogradouro: {Logradouro}\nBairro: {Bairro}\nNumero: {Numero}\nCidade: {Cidade}\nEstado: {Uf}\nCep:{Cep}\n";
+        }
     }
+
+    
 }

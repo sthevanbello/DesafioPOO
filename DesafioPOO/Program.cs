@@ -7,7 +7,8 @@ namespace DesafioPOO
     {
         static void Main(string[] args)
         {
-            Inicial inicial = new Inicial();
+            TelaPassageiro telaPassageiro = new TelaPassageiro();
+            telaPassageiro.IniciarPrograma();
         }
     }
 }

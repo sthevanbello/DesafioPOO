@@ -15,20 +15,32 @@ namespace DesafioPOO.Entidades
             Cor = cor;
         }
 
-        public string Placa { get; set; }
-        public string Modelo { get; set; }
-        public string Cor { get; set; }
+        private string Placa { get; set; }
+        private string Modelo { get; set; }
+        private string Cor { get; set; }
 
+        /// <summary>
+        /// Retorna apenas a placa do carro
+        /// </summary>
+        /// <returns></returns>
         public string ObterPlaca()
         {
             return Placa;
         }
 
+        /// <summary>
+        /// Retorna apenas o modelo do carro
+        /// </summary>
+        /// <returns></returns>
         public string ObterModelo()
         {
             return Modelo;
         }
 
+        /// <summary>
+        /// Retorna apenas a cor do carro
+        /// </summary>
+        /// <returns></returns>
         public string ObterCor()
         {
             return Cor;
