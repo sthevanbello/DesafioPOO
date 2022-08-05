@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesafioPOO.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,18 +9,25 @@ namespace DesafioPOO.Entidades
 {
     public abstract class Cartao
     {
-        public Cartao(string numeroDoCartao, string cpf, int cvv, DateTime validade)
+        public Cartao(string numeroDoCartao, string cpf, int cvv, string validade, string nomeDoCartao)
         {
+            
             NumeroDoCartao = numeroDoCartao;
             Cpf = cpf;
             Cvv = cvv;
             Validade = validade;
+            NomeDoCartao = nomeDoCartao;
         }
+        public string NomeDoCartao { get; set; }
+        protected string NumeroDoCartao { get; set; }
+        protected string Cpf { get; set; }
+        protected int Cvv { get; set; }
+        protected string Validade { get; set; }
+        public ETipoPagamento Tipo { get; set; }
 
-        public string NumeroDoCartao { get; set; }
-        public string Cpf { get; set; }
-        public int Cvv { get; set; }
-        public DateTime Validade { get; set; }
-
+        public override string ToString()
+        {
+            return $"\nNúmero: {NumeroDoCartao}\nCpf: {Cpf}\nDígito verificador: {Cvv}\nValidade: {Validade}\n";
+        }
     }
 }
